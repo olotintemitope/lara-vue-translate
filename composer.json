@@ -1,5 +1,5 @@
 {
-    "name": "lt/lara-vue-translate",
+    "name": "laz/lara-vue-translate",
     "description": "Use Laravel Translation in Vue",
     "autoload": {
         "psr-4": {
