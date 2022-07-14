@@ -1,6 +1,7 @@
 {
     "name": "lt/lara-vue-translate",
     "description": "Use Laravel Translation in Vue",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "Lt\\LaraVueTranslate\\": "src/"
