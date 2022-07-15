@@ -2,6 +2,7 @@
 
 namespace Lt\LaraVueTranslate\Providers;
 
+use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\ServiceProvider;
@@ -23,7 +24,7 @@ class TranslationServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function boot()
+    public function boot(): void
     {
         Cache::rememberForever('translations', function () {
             $translations = collect();
@@ -48,7 +49,7 @@ class TranslationServiceProvider extends ServiceProvider
         ]);
     }
 
-    private function phpTranslations($locale)
+    private function phpTranslations($locale): Collection
     {
         $path = resource_path("lang/$locale");
 
